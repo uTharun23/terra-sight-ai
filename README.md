@@ -1,27 +1,142 @@
-# TerraSight AI – Plant Monitoring Dashboard & CLI Tool
+# 🌱 TerraSight AI – Intelligent Plant Health Monitoring System
 
-**Live Demo**: [https://terra-sight-ai-3zns.vercel.app/](https://terra-sight-ai-3zns.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/🌿%20Live%20Demo-Visit%20Now-22C55E?style=for-the-badge\&logo=vercel\&logoColor=white)](https://terra-sight-ai-3zns.vercel.app/)
 
-TerraSight AI is an intelligent computer vision application designed to evaluate crop and houseplant health non-destructively. By utilizing pixel-level colorimetry analysis in the HSV (Hue, Saturation, Value) color space, the system isolates chlorophyll signatures to detect signs of early plant disease, necrosis, or chlorosis (yellowing leaves) due to watering and nutrient deficiencies.
+### AI-Powered Plant Health Analysis Using Computer Vision & Colorimetry 🚀
 
-This project has been enhanced from a simple demonstration script into a professional dual-system:
-1. **Interactive Web Dashboard**: A premium, responsive single-page web app built with modern HTML5, Vanilla CSS, and JavaScript. Runs entirely client-side for zero-dependency real-time analysis (supports drag-and-drop file upload, live webcam diagnostics, plant profile presets, and PDF report printing).
-2. **Robust Python CLI Tool**: A command-line utility with advanced argument configuration, custom thresholds support, automated image saving, and machine-readable JSON data outputs.
+**Live Application:**
+https://terra-sight-ai-3zns.vercel.app/
+
+---
+
+## 📖 About the Project
+
+TerraSight AI is an intelligent plant health monitoring system that leverages Computer Vision and colorimetric analysis to assess crop and houseplant health non-destructively. By analyzing leaf pigmentation in the HSV (Hue, Saturation, Value) color space, the system identifies healthy vegetation, chlorosis (yellowing), and potential signs of nutrient deficiencies or plant stress.
+
+The project combines a modern interactive web dashboard with a powerful Python-based computer vision tool, enabling users to perform real-time diagnostics through image uploads, webcam feeds, and automated command-line analysis. TerraSight AI provides a simple, accessible, and technology-driven approach to early plant health assessment for students, researchers, hobbyists, and smart agriculture enthusiasts.
+
+---
+
+## 🎯 Project Objective
+
+The objective of TerraSight AI is to provide an accessible and lightweight solution for monitoring plant health through image analysis. The system helps users detect early signs of stress, nutrient deficiencies, and leaf discoloration without requiring expensive agricultural equipment, making plant diagnostics more efficient through computer vision and automation.
 
 ---
 
 ## 🌟 Key Features
 
-* **Real-time Colorimetry Segmentation**: Extracts healthy green foliage versus unhealthy yellow/brown leaf tissue.
-* **Laser Scan Micro-animation**: Premium animated laser sweep that slides down image canvases during the analysis phase.
-* **Ambient Glow Particles**: Floating gradient background glow spheres creating depth and a modern dashboard feel.
-* **Standard Plant Profiles Calibration**: Choose between preset profiles (Standard Foliage, Tomato, Monstera, Succulent, Pothos) that automatically tune the HSV color bounds for specific leaf characteristics.
-* **Dual-View Analysis Matrix**: View the original input feed side-by-side with the isolated AI diagnostic mask.
-* **Webcam Diagnostic Streams**: Directly stream and capture frames from an integrated camera/webcam to audit live leaves in the field.
-* **Dynamic Diagnostics Gauges**: Interactive dashboard meters showcasing percentage ratios of healthy green vs. chlorosis/decay.
-* **Interactive Statistics Timeline**: View the progression of plant health indices across recent runs on a custom-rendered Canvas timeline chart.
-* **Professional Audit Reports**: Generate print-optimized diagnostic pages and save them as PDFs.
-* **Automated CLI Execution**: Batch analyze images headlessly, export results into JSON format, and save masks programmatically.
+### 🌿 Real-Time Plant Diagnostics
+
+Analyze plant leaves instantly using image uploads or webcam feeds.
+
+### 📷 Computer Vision-Based Analysis
+
+Detect healthy vegetation, chlorosis, and leaf discoloration through HSV color segmentation.
+
+### 🎛️ Interactive Web Dashboard
+
+Premium single-page dashboard with responsive layouts and real-time analytics.
+
+### 📊 Dynamic Health Metrics
+
+Visualize healthy vs unhealthy tissue percentages using interactive gauges and charts.
+
+### 🔬 Plant Profile Calibration
+
+Choose optimized analysis settings for:
+
+* Standard Foliage
+* Tomato Plants
+* Monstera
+* Succulents
+* Pothos
+
+### 🎥 Webcam Monitoring
+
+Perform live diagnostics directly from your device camera.
+
+### 📄 Professional Reports
+
+Generate print-friendly diagnostic reports for analysis and documentation.
+
+### ⚙️ Python CLI Automation
+
+Batch-process plant images and export results in machine-readable JSON format.
+
+### 🌙 Modern User Experience
+
+Dark mode, animated diagnostics, ambient effects, and premium dashboard styling.
+
+---
+
+## 🏆 Core Capabilities
+
+| Module                     | Functionality                             |
+| -------------------------- | ----------------------------------------- |
+| 🌿 Plant Health Analysis   | Detect healthy and unhealthy leaf regions |
+| 📷 Webcam Diagnostics      | Real-time plant monitoring                |
+| 📊 Health Dashboard        | Interactive visual analytics              |
+| 🔬 HSV Segmentation Engine | Advanced colorimetric analysis            |
+| 📄 PDF Reporting           | Generate professional reports             |
+| ⚙️ CLI Automation Tool     | Batch image processing                    |
+| 📈 Timeline Analytics      | Track plant health metrics                |
+| 🎛️ Plant Profile System   | Species-specific calibration              |
+
+---
+
+## 🛠️ Technologies Used
+
+Built using modern web technologies and computer vision frameworks to deliver accurate plant diagnostics and an interactive user experience.
+
+### 👁️ Computer Vision & AI
+
+* OpenCV
+* HSV Color Space Analysis
+* Image Thresholding
+* Pixel-Level Colorimetry
+
+### 🐍 Backend & Processing
+
+* Python 3
+* NumPy
+
+### 🌐 Frontend Development
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+
+### 📊 Visualization & Analytics
+
+* HTML5 Canvas
+* Dynamic Charts
+* Interactive Gauges
+
+### ☁️ Deployment
+
+* Vercel
+
+---
+
+## 🚀 Key Highlights
+
+✅ Real-Time Plant Monitoring
+
+✅ Computer Vision Diagnostics
+
+✅ Crop & Houseplant Analysis
+
+✅ Interactive Dashboard
+
+✅ Webcam Integration
+
+✅ Automated Report Generation
+
+✅ JSON Data Export
+
+✅ Responsive Design
+
+✅ Smart Agriculture Application
 
 ---
 
@@ -29,95 +144,176 @@ This project has been enhanced from a simple demonstration script into a profess
 
 ```text
 TerraSight_AI/
-├── .gitignore          # Excludes OS temp files, virtual environments, and python caches
-├── vercel.json         # Vercel deployment override for static hosting
-├── index.html          # Web dashboard layout structure and ambient glow elements
-├── styles.css          # Premium theme styling, keyframes, transitions, and hover elevations
-├── app.js              # Routing, simulated scanning delay, canvas colorimetry, and charts
-├── plant_monitor.py    # Python CLI computer vision tool (OpenCV)
-├── requirements.txt    # Python packages dependencies listing
-├── plant.png           # Default sample leaf image (with healthy and chlorosis spots)
-├── plant.jpg           # Default sample leaf image (JPEG copy)
-└── README.md           # Professional project documentation
+│
+├── .gitignore
+├── vercel.json
+├── index.html
+├── styles.css
+├── app.js
+├── plant_monitor.py
+├── requirements.txt
+├── plant.png
+├── plant.jpg
+└── README.md
 ```
 
 ---
 
-## 🌐 1. Running the Web Dashboard
+## 🌐 Running the Web Dashboard
 
-The web dashboard is fully client-side and does not require active server runtimes.
+The web dashboard runs entirely client-side and requires no backend services.
 
-### Option A: Local Browser Launch
-* Locate `index.html` inside the project folder.
-* Double-click the file to open it in any modern browser (Chrome, Edge, Firefox, Safari).
+### Open Directly
 
-### Option B: Local Development Server
-To use the live webcam feature reliably, some browsers require a secure context (HTTPS or localhost). You can spin up a quick local web server:
-```powershell
-# Using Python built-in server
+Simply open:
+
+```bash
+index.html
+```
+
+in any modern browser.
+
+### Local Server (Recommended)
+
+```bash
 python -m http.server 8000
+```
 
-# Using Node.js npx
+or
+
+```bash
 npx serve .
 ```
-Then navigate to `http://localhost:8000` or `http://localhost:3000` in your web browser.
 
-### Premium UI Interactions
-* **Dark/Light Mode**: Toggle the sun/moon button in the top right to shift variables seamlessly.
-* **Card Elevation**: Hover over any dashboard panel to watch it float up with a glowing green neon shadow.
-* **Analysis Scanner**: Drag a leaf image onto the analysis box; you'll observe a moving laser scanner indicator that locks inputs for 900ms to simulate a premium diagnosis cycle before rendering outputs.
+Then visit:
+
+```text
+http://localhost:8000
+```
 
 ---
 
-## 🐍 2. Running the Python CLI Tool
+## 🐍 Running the Python CLI Tool
 
-The CLI tool utilizes OpenCV to process local image files.
+### Install Dependencies
 
-### Installation
-Ensure Python 3.8+ is installed on your system. Run:
-```powershell
+```bash
 pip install -r requirements.txt
 ```
 
-### Usage
-Run the script using python. If executed without arguments, it loads the default `plant.jpg` image in the workspace:
-```powershell
+### Execute
+
+```bash
 python plant_monitor.py
 ```
 
-### Command-Line Arguments
-The CLI tool is fully configurable:
-```powershell
+### Get Help
+
+```bash
 python plant_monitor.py --help
 ```
 
-* **`-i`, `--image <path>`**: Path to input image (default: `plant.jpg`).
-* **`-s`, `--save <path>`**: Save the processed image with status text overlay.
-* **`-m`, `--save-mask <path>`**: Save the black-and-white binary threshold mask.
-* **`-j`, `--json`**: Output results in machine-readable JSON format instead of printing report text.
-* **`--headless`**: Run headlessly without popping up OpenCV GUI windows (ideal for scripts/CI pipelines).
-* **`--lower <H S V>`**: Custom lower HSV range boundary (default: `25 40 40`).
-* **`--upper <H S V>`**: Custom upper HSV range boundary (default: `90 255 255`).
+---
 
-#### Examples:
-```powershell
-# Run headlessly and save the output mask
-python plant_monitor.py --image plant.png --save-mask mask_output.png --headless
+## ⚙️ Command-Line Options
 
-# Get analysis metrics in JSON format using custom HSV bounds
-python plant_monitor.py --image plant.png --json --lower 30 50 50 --upper 85 255 255
+| Option        | Description             |
+| ------------- | ----------------------- |
+| `--image`     | Input image path        |
+| `--save`      | Save processed image    |
+| `--save-mask` | Save binary mask        |
+| `--json`      | Export JSON results     |
+| `--headless`  | Disable GUI windows     |
+| `--lower`     | Custom HSV lower bounds |
+| `--upper`     | Custom HSV upper bounds |
+
+### Example Commands
+
+```bash
+python plant_monitor.py --image plant.png --save-mask mask.png --headless
+```
+
+```bash
+python plant_monitor.py --image plant.png --json
 ```
 
 ---
 
-## 🔍 Methodology Details
+## 🔍 Methodology
 
-Colors are analyzed by converting standard RGB images into the **HSV (Hue, Saturation, Value)** model. Unlike RGB, HSV separates color hue (pigment) from saturation (color concentration) and value (lighting/intensity):
-* **Hue (H)**: Measured from 0° to 180° in OpenCV. Healthy chlorophyll registers in the green range (typically 25°–90°). Yellowing decay registers in the lower range (typically 0°–24°).
-* **Saturation (S) & Value (V)**: Scaled from 0 to 255. By filtering out low Saturation (dull/grayish colors) and low Value (deep shadows), the algorithm ignores non-leaf objects such as dry soil, shadows, and plant pots.
+TerraSight AI performs image analysis by converting RGB images into the HSV color space.
+
+### Hue (H)
+
+Represents pigment information and helps distinguish healthy green vegetation from yellow or brown tissue.
+
+### Saturation (S)
+
+Measures color intensity and filters dull or irrelevant regions.
+
+### Value (V)
+
+Represents brightness and helps remove shadows and dark artifacts.
+
+By combining these channels, the system isolates chlorophyll-rich regions and calculates plant health indicators with improved reliability compared to standard RGB analysis.
 
 ---
 
-## 📝 Credits
-* **Author**: Ummadala Tharun
-* **Technologies**: Python, OpenCV, Javascript, HTML5 Canvas, CSS Grid/Variables.
+## 🌟 Why This Project Stands Out
+
+Unlike traditional plant monitoring demonstrations, TerraSight AI combines:
+
+* Computer Vision
+* Interactive Dashboard
+* Webcam Diagnostics
+* Plant Profile Calibration
+* CLI Automation
+* PDF Reporting
+* Real-Time Analytics
+
+into a single unified platform.
+
+This creates a practical smart agriculture solution capable of assisting hobbyists, students, researchers, and agricultural enthusiasts in monitoring plant health efficiently.
+
+---
+
+## 👨‍💻 Developed By
+
+### Ummadala Tharun
+
+🎓 B.Tech Information Technology Student
+
+💻 Python Developer | Full Stack Enthusiast | AI & Computer Vision Builder
+
+📧 [tharunummadala@gmail.com](mailto:tharunummadala@gmail.com)
+
+🔗 GitHub: https://github.com/uTharun23
+
+🔗 LinkedIn: https://www.linkedin.com/in/tharunummadala
+
+---
+
+## 📜 License
+
+This project was developed by **Ummadala Tharun** for educational, research, and portfolio demonstration purposes.
+
+Copyright © 2026 Ummadala Tharun. All Rights Reserved.
+
+This repository showcases expertise in:
+
+* 🌱 Smart Agriculture Solutions
+* 👁️ Computer Vision
+* 🤖 Artificial Intelligence Applications
+* 🐍 Python Development
+* 📊 Image Processing & Analytics
+* 🌐 Frontend Web Development
+
+Unauthorized commercial redistribution or reproduction of this project without prior permission is prohibited.
+
+---
+
+### 🌟 TerraSight AI
+
+**Empowering Smarter Plant Health Monitoring Through Computer Vision and Intelligent Diagnostics.**
+
+🚀 Developed by Ummadala Tharun
