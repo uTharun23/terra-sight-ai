@@ -1,0 +1,32 @@
+# Python cache and byte-code
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+bin/
+lib/
+include/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# TerraSight test outputs
+output_*.png
+output_*.jpg
