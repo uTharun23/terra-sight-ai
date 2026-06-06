@@ -11,11 +11,13 @@ This project has been enhanced from a simple demonstration script into a profess
 ## 🌟 Key Features
 
 * **Real-time Colorimetry Segmentation**: Extracts healthy green foliage versus unhealthy yellow/brown leaf tissue.
+* **Laser Scan Micro-animation**: Premium animated laser sweep that slides down image canvases during the analysis phase.
+* **Ambient Glow Particles**: Floating gradient background glow spheres creating depth and a modern dashboard feel.
 * **Standard Plant Profiles Calibration**: Choose between preset profiles (Standard Foliage, Tomato, Monstera, Succulent, Pothos) that automatically tune the HSV color bounds for specific leaf characteristics.
 * **Dual-View Analysis Matrix**: View the original input feed side-by-side with the isolated AI diagnostic mask.
 * **Webcam Diagnostic Streams**: Directly stream and capture frames from an integrated camera/webcam to audit live leaves in the field.
 * **Dynamic Diagnostics Gauges**: Interactive dashboard meters showcasing percentage ratios of healthy green vs. chlorosis/decay.
-* **Interactive Statistics Timeline**: View the progression of plant health indices across recent runs on an custom-rendered SVG/Canvas chart.
+* **Interactive Statistics Timeline**: View the progression of plant health indices across recent runs on a custom-rendered Canvas timeline chart.
 * **Professional Audit Reports**: Generate print-optimized diagnostic pages and save them as PDFs.
 * **Automated CLI Execution**: Batch analyze images headlessly, export results into JSON format, and save masks programmatically.
 
@@ -25,13 +27,14 @@ This project has been enhanced from a simple demonstration script into a profess
 
 ```text
 TerraSight_AI/
-├── index.html          # Web dashboard layout structure
-├── styles.css          # Premium theme styling, glassmorphism UI, & animations
-├── app.js              # Routing, canvas pixel calculations, and chart drawing
+├── .gitignore          # Excludes OS temp files, virtual environments, and python caches
+├── index.html          # Web dashboard layout structure and ambient glow elements
+├── styles.css          # Premium theme styling, keyframes, transitions, and hover elevations
+├── app.js              # Routing, simulated scanning delay, canvas colorimetry, and charts
 ├── plant_monitor.py    # Python CLI computer vision tool (OpenCV)
 ├── requirements.txt    # Python packages dependencies listing
-├── plant.png           # Sample leaf image (Generated PNG)
-├── plant.jpg           # Sample leaf image (JPEG copy)
+├── plant.png           # Default sample leaf image (with healthy and chlorosis spots)
+├── plant.jpg           # Default sample leaf image (JPEG copy)
 └── README.md           # Professional project documentation
 ```
 
@@ -55,6 +58,11 @@ python -m http.server 8000
 npx serve .
 ```
 Then navigate to `http://localhost:8000` or `http://localhost:3000` in your web browser.
+
+### Premium UI Interactions
+* **Dark/Light Mode**: Toggle the sun/moon button in the top right to shift variables seamlessly.
+* **Card Elevation**: Hover over any dashboard panel to watch it float up with a glowing green neon shadow.
+* **Analysis Scanner**: Drag a leaf image onto the analysis box; you'll observe a moving laser scanner indicator that locks inputs for 900ms to simulate a premium diagnosis cycle before rendering outputs.
 
 ---
 
