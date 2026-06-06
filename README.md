@@ -1,5 +1,7 @@
 # TerraSight AI – Plant Monitoring Dashboard & CLI Tool
 
+**Live Demo**: [https://terra-sight-ai-3zns.vercel.app/](https://terra-sight-ai-3zns.vercel.app/)
+
 TerraSight AI is an intelligent computer vision application designed to evaluate crop and houseplant health non-destructively. By utilizing pixel-level colorimetry analysis in the HSV (Hue, Saturation, Value) color space, the system isolates chlorophyll signatures to detect signs of early plant disease, necrosis, or chlorosis (yellowing leaves) due to watering and nutrient deficiencies.
 
 This project has been enhanced from a simple demonstration script into a professional dual-system:
