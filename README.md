@@ -28,6 +28,7 @@ This project has been enhanced from a simple demonstration script into a profess
 ```text
 TerraSight_AI/
 ├── .gitignore          # Excludes OS temp files, virtual environments, and python caches
+├── vercel.json         # Vercel deployment override for static hosting
 ├── index.html          # Web dashboard layout structure and ambient glow elements
 ├── styles.css          # Premium theme styling, keyframes, transitions, and hover elevations
 ├── app.js              # Routing, simulated scanning delay, canvas colorimetry, and charts

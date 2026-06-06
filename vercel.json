@@ -1,0 +1,15 @@
+{
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "styles.css", "use": "@vercel/static" },
+    { "src": "app.js", "use": "@vercel/static" },
+    { "src": "plant.png", "use": "@vercel/static" },
+    { "src": "plant.jpg", "use": "@vercel/static" },
+    { "src": "requirements.txt", "use": "@vercel/static" },
+    { "src": "plant_monitor.py", "use": "@vercel/static" },
+    { "src": "README.md", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
